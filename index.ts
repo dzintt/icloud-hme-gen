@@ -33,7 +33,7 @@ const generateEmails = async (amount: number) => {
         console.log(
           `[${counter}/${amount}] Reached limit, waiting 30 minutes for reset...`
         );
-        await sleepMs(30 * 60 * 1000);
+        await sleepMs(31 * 60 * 1000);
       }
       continue;
     }
