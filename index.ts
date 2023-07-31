@@ -31,9 +31,9 @@ const generateEmails = async (amount: number) => {
 
       if (claimResult.error.errorCode === "-41015") {
         console.log(
-          `[${counter}/${amount}] Reached limit, waiting 45 minutes for reset...`
+          `[${counter}/${amount}] Reached limit, waiting 60 minutes for reset...`
         );
-        await sleepMs(46 * 60 * 1000);
+        await sleepMs(61 * 60 * 1000);
       }
       continue;
     }
