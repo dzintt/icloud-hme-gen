@@ -6,11 +6,11 @@ export class iCloudHME {
 
   constructor(cookies: Cookie[]) {
     this.session = axios.create({
-      baseURL: "https://p114-maildomainws.icloud.com/v1/hme",
+      baseURL: "https://p123-maildomainws.icloud.com/v2/hme",
       responseType: "json",
       validateStatus: null,
       headers: {
-        Host: "p114-maildomainws.icloud.com",
+        Host: "p123-maildomainws.icloud.com",
         Origin: "https://www.icloud.com",
         Referer: "https://www.icloud.com/",
         "Sec-Ch-Ua":
@@ -27,8 +27,8 @@ export class iCloudHME {
           .join(";"),
       },
       params: {
-        clientBuildNumber: "2316Project30",
-        clientMasteringNumber: "2316B20",
+        clientBuildNumber: "2420Hotfix12",
+        clientMasteringNumber: "2420Hotfix12",
         clientId: "",
         dsid: "",
       },
